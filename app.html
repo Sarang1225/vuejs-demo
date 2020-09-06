@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="inputBox">
+            <input type="text" v-model="message" placeholder="edit me!!">
+            <br>
+            <p><b>Entered String:</b> {{ message }}</p>
+            <p><b>String in Uppercase: </b>{{ ucString }}</p>
+            <button v-on:click="UCMessage">Convert To Uppercase</button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
